@@ -16,6 +16,10 @@ public class Account implements IAccount {
         this.balance = balance;
     }
 
+    public Client getClient() {
+        return client;
+    }
+
     public BankAgency getAgency() {
         return agency;
     }
@@ -45,7 +49,6 @@ public class Account implements IAccount {
     public void transfer(double value, IAccount destinationAccount) {
         this.withdraw(value);
         destinationAccount.deposit(value);
-
     }
     @Override
     public void deposit(double value) {
