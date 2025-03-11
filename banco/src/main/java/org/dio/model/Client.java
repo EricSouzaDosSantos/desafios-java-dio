@@ -1,15 +1,9 @@
 package org.dio.model;
 
-import org.dio.exceptions.InvalidCPFException;
-import org.dio.service.ClientService;
-
-import java.security.NoSuchAlgorithmException;
-
 public class Client {
     private String name;
     private String password;
     private String cpf;
-
 
     public String getName() {
         return name;
@@ -34,5 +28,4 @@ public class Client {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
 }

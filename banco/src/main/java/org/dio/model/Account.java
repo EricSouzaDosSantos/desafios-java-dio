@@ -53,12 +53,10 @@ public class Account implements IAccount {
     @Override
     public void deposit(double value) {
         this.balance += value;
-
     }
 
     @Override
     public void withdraw(double value) {
         this.balance -= value;
-
     }
 }
