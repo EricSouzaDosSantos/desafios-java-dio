@@ -48,7 +48,7 @@ public class ClientService {
         }
     }
 
-    private Client getClientByCPF(String cpfHash) {
+    public Client getClientByCPF(String cpfHash) {
         for (Client client : clientList) {
             if (client.getCpf().equals(cpfHash)) {
                 return client;
