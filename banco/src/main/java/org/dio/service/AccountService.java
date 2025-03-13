@@ -15,7 +15,7 @@ public class AccountService {
 
     private final ClientService clientService;
 
-    AccountService(){
+    public AccountService(){
         this.accountList = new HashMap<>();
         this.clientService = new ClientService();
     }
