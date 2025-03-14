@@ -69,4 +69,8 @@ public class AccountService {
             System.out.println("Cliente não encontrado!");
         }
     }
+
+    public Account getAccountByClient(Client clientLogged) {
+        return accountList.get(clientLogged);
+    }
 }
