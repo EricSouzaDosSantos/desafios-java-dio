@@ -56,7 +56,12 @@ public class Account implements IAccount {
     }
 
     @Override
-    public void withdraw(double value) {
-        this.balance -= value;
+    public boolean withdraw(double value) {
+        if (this.balance < value) {
+            return false;
+        }else {
+            this.balance -= value;
+            return true;
+        }
     }
 }
